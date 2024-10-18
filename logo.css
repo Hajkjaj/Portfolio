@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+}
+header{
+    top: 0%;
+    right: 0%;
+    width: 100%;
+	position: fixed;
+    z-index: 99;
+    background: #ff7b00;
+    display: flex;
+	align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+h1{
+    font-size: 2.5em;
+    font-weight: 600;
+}
+.pagination{
+    font-size: 2em;
+    font-weight: 500;
+    right: 50px;
+    position: absolute;
+}
+
+.pagination a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+.pagination a.active{
+    color: #0004ff;
+}
+
+.back a{
+    color: #ffffff;
+    position: absolute;
+    font-size: 1rem;
+    margin-top: 20px;
+    right: 100px;
+    text-decoration: none;
+    transition: all .45s ease;
+}
+
+.back a:hover{
+    transform: scale(1.1);
+    color: #000;
+
+}
+section{
+    min-height: 100vh;
+    padding-top: 10px;
+}
+.imgs{
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	margin: 100px 20px;
+ 
+}
+.imgs-grid{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    position: relative;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+.img-zoom-lens {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    /*set the size of the lens:*/
+    width: 200px;
+    height: 200px;
+  }
+
+  .img-zoom-result {
+    border: 2px solid #ffffff;
+    /*set the size of the result div: width: 650px;
+    height: 650px;*/
+    width: 100%;
+    height: 100%;
+   
+  }
